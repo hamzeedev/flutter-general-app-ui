@@ -14,6 +14,9 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('General A P P')),
+      body: Center(
+        child: Text('UNDER DEVELOPMENT...'),
+        ),
     );
   }
 }
