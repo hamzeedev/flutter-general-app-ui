@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:mini/customs/customTextfield.dart';
 import 'package:mini/homeScreen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -11,6 +12,10 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+
+  // text editing controller
+  final usernameController = TextEditingController();
+  final passwordController = TextEditingController();
   // method to nevigate from login to Home Screen...
   void userLogin() {
     Navigator.pop(context);
@@ -54,10 +59,52 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
 
-                const SizedBox(height: 50), 
+                const SizedBox(height: 25), 
 
                 // Username Customized Textfield...
+                CustomTextField(
+                  controller:   usernameController, 
+                  hintText:    'Enter Username', 
+                  obscureText:  false
+                  ),
+
+                  const SizedBox(height: 10),
+
                 // Password Customized Textfield...
+                CustomTextField(
+                  controller:   passwordController, 
+                  hintText:    'Enter Password', 
+                  obscureText:  true
+                  ),
+
+                  const SizedBox(height: 10),
+                  
+                  // forgot password ...
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Text(
+                          'Forgot Password',
+                          style: TextStyle(color: Colors.blueGrey[600], fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+
+                  ),
+
+                  const SizedBox(height: 25),
+
+                  
+
+                  const SizedBox(height: 50), 
+
+                  const SizedBox(height: 50), 
+
+                  const SizedBox(height: 50), 
+
+
 
 
 
