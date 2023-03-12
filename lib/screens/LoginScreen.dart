@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:mini/customs/customButton.dart';
+import 'package:mini/customs/customSquareTile.dart';
 import 'package:mini/customs/customTextfield.dart';
 import 'package:mini/homeScreen.dart';
 
@@ -52,10 +54,12 @@ class _LoginScreenState extends State<LoginScreen> {
 
                 // welcome note of app
                 Text(
-                  'Welcom back to your G E N E R A L  A P P',
-                  style: TextStyle(
+                  'Welcom back to  G E N E R A L  A P P',
+                  style: 
+                  TextStyle(
                     color: Colors.blueGrey[700],
                     fontSize: 14,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
 
@@ -64,7 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 // Username Customized Textfield...
                 CustomTextField(
                   controller:   usernameController, 
-                  hintText:    'Enter Username', 
+                  hintText:    'Username', 
                   obscureText:  false
                   ),
 
@@ -73,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 // Password Customized Textfield...
                 CustomTextField(
                   controller:   passwordController, 
-                  hintText:    'Enter Password', 
+                  hintText:    'Password', 
                   obscureText:  true
                   ),
 
@@ -86,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Text(
-                          'Forgot Password',
+                          'Forgot Password ?',
                           style: TextStyle(color: Colors.blueGrey[600], fontWeight: FontWeight.bold),
                         )
                       ],
@@ -94,15 +98,59 @@ class _LoginScreenState extends State<LoginScreen> {
 
                   ),
 
-                  const SizedBox(height: 25),
+                  const SizedBox(height: 15),
 
+                  // Customized Login Button...
+                  CustomButton(
+                    onTap: userLogin,
+                    ),
+                    
+                 
+                  const SizedBox(height: 50), 
+
+                  // statement
+                  Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Divider(
+                          thickness: 1.5,
+                          color: Colors.blueGrey[400],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        child: Text(
+                          'Or continue with',
+                          style: TextStyle(color: Colors.blueGrey[700], fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Expanded(
+                        child: Divider(
+                          thickness: 1.5,
+                          color: Colors.blueGrey[400],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                   
 
                   const SizedBox(height: 50), 
 
-                  const SizedBox(height: 50), 
+                  Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    // google button
+                    CustomSquareTile(imagePath: 'lib/images/google.png'),
 
-                  const SizedBox(height: 50), 
+                    SizedBox(width: 25),
+
+                    // apple button
+                    CustomSquareTile(imagePath: 'lib/images/apple.png')
+                  ],
+                ),
 
 
 
