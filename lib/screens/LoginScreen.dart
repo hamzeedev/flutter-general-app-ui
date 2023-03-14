@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:mini/customs/customButton.dart';
 import 'package:mini/customs/customSquareTile.dart';
 import 'package:mini/customs/customTextfield.dart';
+import 'package:mini/homeScreen.dart';
 import 'package:mini/screens/mainScreen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -24,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const MainScreen(),
+          builder: (context) => const HomeScreen(),
         )
         );
   }
