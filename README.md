@@ -1,3 +1,5 @@
+# Idea behind this
+i am currently doing my final year project and face lots of difficulties and this general app is basically prototype of my real app that how my app will look like , also any one can take basic idea that how there app may look
 # Screen Shots
 
 
