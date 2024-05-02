@@ -6,6 +6,7 @@ class AboutUsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey[200],
       appBar: AppBar(
         backgroundColor: Colors.blueGrey[300],
         elevation: 0,
@@ -14,7 +15,7 @@ class AboutUsScreen extends StatelessWidget {
           style: TextStyle(color: Colors.blueGrey[800]),
         ),
       ),
-      body: const Center(child: Text('this app was designed for..')),
+      body: const Center(child: Text('this app was designed H2R')),
     );
   }
 }

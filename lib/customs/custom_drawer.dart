@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:mini/screens/LoginScreen.dart';
-import 'package:mini/screens/aboutusScreen.dart';
+import 'package:mini/screens/login_screen.dart';
+import 'package:mini/screens/about_us_screen.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -17,7 +15,7 @@ class CustomDrawer extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => LoginScreen(),
+        builder: (context) => const LoginScreen(),
       ),
     );
   }

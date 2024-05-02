@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
-class MainScreen extends StatelessWidget {
-  const MainScreen({super.key});
+class SettingScreen extends StatelessWidget {
+  const SettingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +12,7 @@ class MainScreen extends StatelessWidget {
         child: ListView.builder(
           itemCount: 10,
           itemBuilder: (context, index) => Container(
-            height: 200,
+            height: 100,
             margin: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),

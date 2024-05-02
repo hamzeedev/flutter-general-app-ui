@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:mini/customs/customButton.dart';
-import 'package:mini/customs/customSquareTile.dart';
-import 'package:mini/customs/customTextfield.dart';
-import 'package:mini/homeScreen.dart';
-import 'package:mini/screens/mainScreen.dart';
+import 'package:mini/customs/custom_button.dart';
+import 'package:mini/customs/custom_square_tile.dart';
+import 'package:mini/customs/custom_textfield.dart';
+import 'package:mini/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -140,9 +137,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
                   const SizedBox(height: 50), 
 
-                  Row(
+                  const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     // google button
                     CustomSquareTile(imagePath: 'lib/images/google.png'),
 

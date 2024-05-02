@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:mini/customs/customDrawer.dart';
-import 'package:mini/customs/customNavBar.dart';
-import 'package:mini/screens/dashboardScreen.dart';
-import 'package:mini/screens/feedsScreen.dart';
-import 'package:mini/screens/mainScreen.dart';
-import 'package:mini/screens/settingScreen.dart';
+import 'package:mini/customs/custom_drawer.dart';
+import 'package:mini/customs/custom_nav_bar.dart';
+import 'package:mini/screens/dashboard_screen.dart';
+import 'package:mini/screens/feeds_screen.dart';
+import 'package:mini/screens/main_screen.dart';
+import 'package:mini/screens/setting_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

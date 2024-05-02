@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
-class FeedsScreen extends StatelessWidget {
-  const FeedsScreen({super.key});
+class MainScreen extends StatelessWidget {
+  const MainScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,10 +9,8 @@ class FeedsScreen extends StatelessWidget {
       backgroundColor: Colors.transparent,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10.0),
-        child: GridView.builder(
+        child: ListView.builder(
           itemCount: 10,
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2),
           itemBuilder: (context, index) => Container(
             height: 200,
             margin: const EdgeInsets.all(10),
